@@ -1,6 +1,7 @@
 import argparse
 
 from scalesim.scale_sim import scalesim
+from multiprocessing import Pool
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -36,4 +37,5 @@ if __name__ == '__main__':
                  topology=topology,
                  input_type_gemm=gemm_input
                  )
-    s.run_scale(top_path=logpath)
+
+    s.run_scale(logpath)

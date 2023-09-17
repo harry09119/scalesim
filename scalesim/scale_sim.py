@@ -89,19 +89,7 @@ class scalesim:
 
         if self.verbose_flag:
             self.print_run_configs()
-
-        #save_trace = not self.save_space
-
-        # TODO: Anand
-        # TODO: This release
-        # TODO: Call the class member functions
-        #self.runner.run_net(
-        #    config=self.config,
-        #    topo=self.topo,
-        #    top_path=self.top_path,
-        #    save_trace=save_trace,
-        #    verbosity=self.verbose_flag
-        #)
+        
         self.runner.run()
         self.run_done_flag = True
 
